@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="SampleNamespace" constructor="FluentSpinner" version="0.0.1" display-name-key="FluentSpinner" description-key="FluentSpinner description" control-type="virtual" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <property name="ariaLabel" display-name-key="Aria_Label" description-key="Alternative status label for screen reader" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="ariaLive" display-name-key="Aria_Live" description-key="Politeness setting for label update announcement." of-type="Enum" usage="input" required="false">
+      <value name="assertive" display-name-key="false">assertive</value>
+      <value name="polite" display-name-key="off">polite</value>
+      <value name="off" display-name-key="off">off</value>
+    </property>
+    <property name="label" display-name-key="Label" description-key="The label to show next to the Spinner. Label updates will be announced to the screen readers. Use ariaLive to control politeness level." of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="labelPosition" display-name-key="Label_Position" description-key="The position of the label in regards of the spinner animation." of-type="Enum" usage="input" required="false">
+      <value name="top" display-name-key="top">top</value>
+      <value name="right" display-name-key="right">right</value>
+      <value name="bottom" display-name-key="bottom">bottom</value>
+      <value name="left" display-name-key="left">left</value>
+    </property>
+    <property name="size" display-name-key="Size" description-key="The position of the label in regards of the spinner animation." of-type="Enum" usage="input" required="false">
+      <value name="xsmall" display-name-key="xsmall">0</value>
+      <value name="small" display-name-key="small">1</value>
+      <value name="medium" display-name-key="medium">2</value>
+      <value name="large" display-name-key="large">3</value>
+    </property>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+      <platform-library name="Fluent" version="8.29.0" />
+    </resources>
+
+  </control>
+</manifest>
